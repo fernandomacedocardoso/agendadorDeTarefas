@@ -61,6 +61,7 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder(); // Retorna uma instância de BCryptPasswordEncoder
     }
 
+
     // Configura o AuthenticationManager usando AuthenticationConfiguration
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
