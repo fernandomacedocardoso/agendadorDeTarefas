@@ -1,4 +1,4 @@
-package com.java.usuario.infra.exception.entity;
+package com.java.usuario.infra.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
