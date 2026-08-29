@@ -2,6 +2,7 @@ package com.java.usuario.business;
 
 import com.java.usuario.business.converter.UsuarioConverter;
 import com.java.usuario.business.dto.UsuarioDTO;
+import com.java.usuario.infra.exception.ResourceNotFoundException;
 import com.java.usuario.infra.exception.entity.Usuario;
 import com.java.usuario.infra.exception.ConflictException;
 import com.java.usuario.infra.exception.repository.UsuarioRepository;
