@@ -1,4 +1,4 @@
-package com.java.usuario.entity;
+package com.java.usuario.infra.exception.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -22,16 +22,16 @@ public class Endereco {
     @Column(name = "numero")
     private String numero;
 
-    @Column(name = "complemento", length = 50)
+    @Column(name = "complemento", length = 150)
     private String complemento;
 
     @Column(name = "cidade", length = 150)
     private String cidade;
 
-    @Column(name = "estado", length = 2)
+    @Column(name = "estado", length = 100)
     private String estado;
 
-    @Column(name = "cep", length = 9)
+    @Column(name = "cep", length = 150)
     private String cep;
 
 

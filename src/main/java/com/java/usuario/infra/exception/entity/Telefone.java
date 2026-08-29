@@ -1,4 +1,4 @@
-package com.java.usuario.entity;
+package com.java.usuario.infra.exception.entity;
 
 
 import jakarta.persistence.*;
@@ -17,9 +17,9 @@ public class Telefone {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "numero", length = 10)
+    @Column(name = "numero", length = 150)
     private String numero;
 
-    @Column(name = "ddd",  length = 3)
+    @Column(name = "ddd",  length = 10)
     private String ddd;
 }
