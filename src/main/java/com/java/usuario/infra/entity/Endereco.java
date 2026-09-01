@@ -34,5 +34,8 @@ public class Endereco {
     @Column(name = "cep", length = 150)
     private String cep;
 
+    @Column(name = "usuario_id")
+    private Long usuario_id;
+
 
 }
