@@ -1,6 +1,6 @@
-package com.java.usuario.repository;
+package com.java.usuario.infra.repository;
 
-import com.java.usuario.entity.Usuario;
+import com.java.usuario.infra.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,4 +10,7 @@ import java.util.Optional;
 public interface UsuarioRepository extends JpaRepository<Usuario,Long> {
 
     Optional<Usuario> findByEmail(String email);
+
+    Optional<Usuario> deleteByEmail(String email);
+
 }
